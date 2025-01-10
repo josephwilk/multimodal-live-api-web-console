@@ -36,8 +36,7 @@ function App() {
   const videoRef = useRef<HTMLVideoElement>(null);
   // either the screen capture, the video or null, if null we hide it
   const [videoStream, setVideoStream] = useState<MediaStream | null>(null);
-  const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.userAgent.toLowerCase().indexOf('macintosh') > -1 && 
-                    navigator.maxTouchPoints && navigator.maxTouchPoints > 2)
+  const isIOS = true
 
   const [isFrontCamera, setIsFrontCamera] = useState(true); // Always start with front camera
 
